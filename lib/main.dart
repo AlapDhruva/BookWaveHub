@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(textTheme: GoogleFonts.latoTextTheme()),
+      theme: ThemeData(
+        textTheme: GoogleFonts.latoTextTheme(),
+        appBarTheme: AppBarTheme(
+          iconTheme: IconThemeData(
+            color: Colors.white, // Set the color of the back arrow button here
+          ),
+        ),
+      ),
       initialRoute: '/',
       routes: {
         '/': (context) => Login(),

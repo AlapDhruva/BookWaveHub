@@ -48,7 +48,10 @@ class _HomeState extends State<Home> {
                 //Navigator.pushNamed(context, '/');
                 Navigator.popAndPushNamed(context, '/');
               },
-              child: Text('Logout'),
+              child: Text(
+                'Logout',
+                style: TextStyle(color: Colors.white),
+              ),
             )
           ],
         ),

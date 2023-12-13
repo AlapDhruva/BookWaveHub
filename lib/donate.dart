@@ -146,7 +146,10 @@ class _DonationState extends State<Donation> {
                   Navigator.pushNamed(context, '/home');
                 }
               },
-              child: Text('Donate'),
+              child: Text(
+                'Donate',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),

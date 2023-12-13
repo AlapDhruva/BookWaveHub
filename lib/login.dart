@@ -71,7 +71,10 @@ class _LoginState extends State<Login> {
                       MaterialStateProperty.all<Color>(Colors.black),
                 ),
                 onPressed: _signIn,
-                child: Text('Login'),
+                child: Text(
+                  'Login',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
               InkWell(
                 onTap: () {

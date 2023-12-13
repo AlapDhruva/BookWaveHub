@@ -22,11 +22,15 @@ class _BookDescriptionState extends State<BookDescription> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text(args['title']),
+          title: Text(
+            args['title'],
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         backgroundColor: Colors.orange[200],
         bottomNavigationBar: BottomAppBar(
-          height: 50,
+          color: Colors.black,
+          height: 60,
           child: TextButton(
             style: ButtonStyle(
               backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),

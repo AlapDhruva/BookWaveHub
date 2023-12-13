@@ -23,7 +23,10 @@ class _LocationState extends State<Location> {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Location'),
+          title: Text(
+            'Location',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         body: ListView(
           children: [

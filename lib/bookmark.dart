@@ -21,7 +21,10 @@ class _BookMarkState extends State<BookMark> {
       backgroundColor: Colors.orange[200],
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Bookmarks"),
+        title: Text(
+          "Bookmarks",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: StreamBuilder<QuerySnapshot>(
         stream: bookmarks,

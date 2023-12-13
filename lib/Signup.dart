@@ -21,7 +21,10 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       backgroundColor: Colors.deepOrange[400],
       appBar: AppBar(
-        title: Text("Register"),
+        title: Text(
+          "Register",
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.black,
       ),
       body: Center(
@@ -101,7 +104,10 @@ class _SignUpState extends State<SignUp> {
                     onPressed: () {
                       _signUp();
                     },
-                    child: Text('Register'),
+                    child: Text(
+                      'Register',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.black),
